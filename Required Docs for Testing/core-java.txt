@@ -1,0 +1,714 @@
+Core Java Interview Questions and Answers
+--------
+
+1.What is java?
+================
+*Java is a simple programing language.
+*Writing, compilation and debugging a program is very easy in java.
+*It helps to create reusable code.
+2.Why are we go for java?
+==========================
+*It is a platform independent and open soruce.
+*It runs multiple application at a time.
+3.What are the main features of java?
+=====================================
+*Java has more features,
+1. Platform independent
+2. Open source
+3. Multithreading
+4. More secure
+5. Portable
+4.What is platform independent?
+================================
+*During the compilation the java program converts into byte code.
+*Using byte code we can run the application to any platform such as windows, mac, linux, etc..
+5.What is mean by Open Source?
+===============================
+*A program in which source code is available to the general public for use and/or modification from its original design at free of cost is called open source.
+6.What are types of tools are used to execute java?
+===================================================
+*Notepad
+*Net bean
+*Eclipse
+*J Developer(oracle)
+*RAD(IBM)
+7.What are difference between JDK,JVM,JRE?
+==========================================
+JDK:
+----
+*Java Development Kit.
+*If we want to run any applications in java we need JDK have to installed.
+*JDK versions: 1.0 to 1.10.
+JRE: ---- *Java Runtime Environment. *It is a pre-defined class files (i.e.) library files. JVM:
+----
+*Java Virtual Machine.
+*It is mainly used to allocate the memory and compiling.
+8.What is mean by oops?
+=======================
+*OOPS is Object Oriented Programing Structure.
+*OOPS is a method of implementation in which programs are organized as collection of objects, class and methods.
+9.What are the coding Standard used in java?
+=============================================
+*Pascal notation: Each and every word of the first letter should be in capital. Example:GreensTechnology
+*Camel notation: First word should be small after every word of the first letter should be capital. Example:greensTechnology
+10.What is mean by class,method,object?
+=======================================
+Class:
+------
+*Class is nothing but collection of methods or collection of objects. Method:
+-------
+*Method is nothing but set of action to be performed.
+Object:
+-------
+*Object is the run time memory allocation.
+*Using object we call the any methods.
+11.What is mean by Encapsulation?
+=================================
+*It is the structure of creating folders.
+*It wraps the data and code acting on a data together in to a single unit.
+*Example of encapsulation POJO class.
+12.What are the datatypes used in java?
+=======================================
+*byte 
+*short 
+*int 
+*long
+*float
+*double
+*boolean 
+*char 
+*String
+13.What is byte size and range of int datatypes?
+==================================================
+*Size of byte is 1 byte (8 bit)
+*Range formula =[-2^(n-1)] to [(2^(n-1))-1] for int n=32.
+14.What is mean by Wrapper class?
+=================================
+*Classes of data types is called wrapper class.
+*It is used to convert any data type into object.
+*All classes and wrapper classes default value is Null.
+15.What is the main use of Scanner class?
+=========================================
+*For getting the inputs from the user at the run time.
+16.What are the methods available in Scanner Class?
+====================================================
+*nextByte();
+*nextShort();
+*nextInt();
+*nextLong();
+*nextFloat();
+*nextDouble();
+*next().charAt(0);
+*next();
+*nextLine();
+*nextBoolean();
+17.What is mean by inheritance?
+===============================
+*We can access one class property into another class using 'extend' keyword and reusuable purpose.
+*It avoid memory wastage.
+18.What are the ways to access the methods /data from another class?
+=====================================================================
+*We can access the another class methods either by creating object or use extends keyword.
+19.What is mean by polymorphism?
+================================
+*Poly-many.
+*Morphism-forms.
+*Taking more than one forms is called polymorphism or one task completed by many ways.
+20.What are the difference between method overloading and overriding?
+=====================================================================
+Method overloading(static binding/compile time polymorphism):
+-------------------------------------------------------------
+*Class-same
+*Method-same
+*Argument-differ based on datatype,order,number
+Method overriding(dynamic binding/run time polymorphism):
+----------------------------------------------------------
+*Class name-differ(using extends)
+*Method-same
+*Argument-same
+21.What are the types of inheritance?
+=====================================
+*Single Inheritance
+*Multilevel Inheritance
+*Multiple Inheritances
+*Hybrid Inheritance
+*Hierarchical Inheritance
+22.Why multiple inheritance is not supported in java?
+=====================================================
+*Priority problem
+*Compilation error/syntax error
+(i.e) if both parent class having same method name it will get priority problem so it doesn't work in java.
+23.What are the difference between Multiple and Multilevel inheritance?
+=======================================================================
+Multiple inheritance:
+---------------------
+*Combination of more then one parent class directly supported one child class.
+*It wont work in java due to priority problem.
+Multilevel inheritance:
+-----------------------
+*Combination of more than one parent class and child class using tee level structure.
+*It work in java.
+24.What is mean by access specifier?
+====================================
+*It decides the level of access to the variable,method and class.
+25.What are the difference between public and protected?
+========================================================
+Public:
+-------
+*It is global level access( same package + different package).
+Protected:
+----------
+*Inside package + outside Package (Extends).
+26.What is mean by Abstraction?
+===============================
+*Hiding the implementation part is called abstraction.
+*We wont create object for the Abstract class.
+*It contain simply templete and business logic is presented inside.
+27.What are the types of Abstraction?
+=====================================
+1.Partially abstraction(abstract class).
+2.Fully abstraction(interface).
+28.Can we create Object for Abstract class?
+===========================================
+*No, we cant create object for abstract class.
+29.What is mean by Interface?
+=============================
+*It will support only abstract method, won't support non abstract method.
+*In interface "public abstract" is default. we no need to mention.
+*It using implements keywords.
+30.What are the difference between Abstract and Interface?
+==========================================================
+Abstract class:
+---------------
+*It is partially abstraction.
+*It support both abstract method and non-abstract method.
+*It’s using "extends" keyword.
+*Here "public abstract" have to mention.
+*We can use whatever access specifier we want.
+Interface:
+----------
+*It is fully abstraction.
+*It support only abstract method.
+*It’s using "implement" keyword.
+*"public Abstract" is default no need to mention.
+*Here we use only public( access specifier).
+31.What is mean by String?
+==========================
+*Collections of charactor or word enclosed with double quotes is called as String.
+*Example : "greenstechnology".
+32.What are the method available in string?
+===========================================
+*Equals();
+*Equalsignorecase();
+*contains();
+*split();
+*toUpperCase();
+*toLowerCase();
+*subString();
+*isEmpty();
+*identifyHashCode();
+*startsWith();
+*endsWith();
+*CompareTo();
+*charAt();
+*indexOf();
+*lastIndexOf();
+*replace();
+33.What is mean by constructor?
+===============================
+*Class name and constructor name must be same.
+*It doesn't have any return type.
+*We don't want to call constructor which is creating object itself.
+*It will automatically invoke the default constructor.
+*It will support in method overloading but won't support in method overriding.
+34.Explain the types of constructor?
+====================================
+*Parameterized constructor
+*Non parameterized constructor
+35.Do constructors have any return type?
+========================================
+*No,constructor can't have any return type.
+36.Write a syntax for creating constructor?
+===========================================
+*Access specifier classname(){
+}
+37.What are the rules for defining a constructor?
+==================================================
+*Class name and constructor name must be same.
+*It doesn't have any return type.
+38.Why a return type is not allowed for constructor?
+====================================================
+*constructor is not directly called by your code, its calle by memory allocation and object initialisation inthe run time.
+*Its return value is opaque to the user so we cant mention it.
+39.Can we declare constructor as 'private'?
+===========================================
+*Yes,we can declare constructor as private.
+40.Why a compiler given constructor is called as default constructor?
+=====================================================================
+*If we wont pass the constructor explict it will take the default constructor.
+41.What is constructor chaining and how can it be achieved in Java?
+===================================================================
+*The process of calling one constructor from another constructor with respect to current object is called constructor chaining.
+*By using this() we can achieve constructor chaining.
+42.What are the difference between this() and super()?
+=======================================================
+*this() is used to call class level constructor.
+*super() is used to call the constructor in parent class.
+43.What is the super class of all java?
+=======================================
+*Object is the super class of all java.
+44.What are the types of variable?
+===================================
+*Local level variable.
+*Class level variable.
+*Super level variable.
+45.What is meant by local variable,instance variable,class/static variable?
+===========================================================================
+*Static Variable-It is used for share the same variable or method of a given class.
+*Local Variable-It will declare below the main method.
+*Class variable-It will access only with in the class
+46.What is mean by static keyword in java?
+===========================================
+*The static keyword is mainly used for memory management.
+*It is used for share the same variable or method of a given class.
+47.Can we override static method in java?
+=========================================
+*No,we can't override the static method because it is part of a class rather than an object.
+48.Can we overload static method in java?
+=========================================
+*Yes, we can overload the static method in java.
+49.What is mean by static variable?
+===================================
+*When a variable is declared as static,then a single copy of variable is created and shared among all object at class level.
+*Static variable are essentially ,global variable.
+*All the instance of the class share the same static variable.
+50.What is mean by static method?
+=================================
+*Static method in java belong to the class(not to an object).
+*They use no instance variables and will usually take the input from the parameters and perform action on it,then return some result. 
+51.What is mean by final keyword and what's happend when we declare final as in class,method,variable?
+========================================================================================================
+*Final is a non access modifier applicable only to a variable,a method or a class.
+*When a variable is declared with final keyword,its value cant be modified essentially a constant.
+*When a method is declared as final we can prevent method overriding.
+*When a class is declared as final we can prevent inheritance.
+52.What is difference between final and finally keyword?
+========================================================
+Final:
+-----
+*Final varaible can't be modified.
+*Final method can't be overrided.
+*Final class ca't be inherited.
+Finally:
+--------
+*Finally part will executed the important code whether the exception is handled or not.
+53.Where local,static and class variables stores in jvm?
+=========================================================
+*Static variables are stored in the permGen section of heap memory.
+*Local variables are stored in stack.
+*Class variables are stored in heap memory.
+54.What is Exception?
+=====================
+*Exception is like a error,whenever it occur the program will terminated that line itself.
+55.Explain about types of Expection?
+====================================
+*Unchecked exception(Run time exception)
+*Checked exception(Compile time exception)
+56.What are the difference between checked expection and unchecked expection?
+=============================================================================
+Unchecked exception:
+--------------------
+*It will occur at the Run time exception.
+Checked exception:
+-----------------
+*Checked exception will occur at the Compile time exception.
+57.What is the super class for Exception and Error?
+======================================================
+*Throwable
+*Exception
+58.Can we have try block without catch block?
+==============================================
+*No, we haven't try block without catch block.
+59.Can we write multiple catch blocks under single try block?
+=============================================================
+*Yes,we write multiple catch blocks under single try block.
+60.How to write user defined exception or custom exception in java?
+===================================================================
+access specifier method name throws customException {
+throw new customException();
+}
+61.What are the different ways to print exception message on console?
+=====================================================================
+*ref.printStackTrace() method is used to print the exception message from the console.
+62.What are the differences between final finally and finalize in java?
+=======================================================================
+Final:
+-----
+*A final class variable whose value cannot be changed.
+*A final is declared as class level, they cannot be inherited.
+*If final is declared as method level, they cannot be override.
+Finally:
+--------
+*It’s a block of statement that definitely executes after the try catch block.
+*If try block fails means, the final block will executes once.
+Finalize:
+----------
+*It will clean up processing memory space.
+63.What are the differences between throw and throws?
+======================================================
+Throw:
+------
+*Throw is a keyword, we can through any exception inside the method.
+*At a time we can throw only one exception.
+Throws:
+------
+*Throws is a keyword, it is used to declare the exception(in method level).
+*At a time we can declare more than one exception.
+64.Explain Java Exception Hierarchy?
+=====================================
+Exception
+1. Unchecked exception(Run time exception) 
+*ArithmaticException 
+*NullPointException 
+*InputMismatchException 
+*ArrayIndexOutOfBoundExcepion 
+*StringIndexOutOfBoundExcepion
+*IndexOutOfBoundExcepion
+*NumberFormatException
+2. Checked exception(Compile time exception)
+*IOException
+*SQLException
+*FileNotFoundException
+*ClassNotFoundException
+65.What is mean by throw and throws?
+=====================================
+*Throw and Throws is a keyword used to declare the custom exception in java.
+*Throw is a keyword,we can through any exception inside the method.
+*Throws is a keyword, it is used to declare the exception(in method level).
+66.What is mean by array?
+==========================
+*Storing multiple values of similar datatype in a single variable.
+*It is index based one.
+67.What are the advantages and disadvantages of array?
+=======================================================
+Advantage:
+----------
+*In a sigle variable we can store multiple values.
+Disadvantages:
+--------------
+*It support only similar data types.
+*It is a fixed size one.
+*Memory wastage is high.
+68.Write a code to intialise array?
+===================================
+*Datatype refName[]= new Datatype[size];
+*Datatype refname={ };
+69.Can we change the memory size of array after intialization?
+===============================================================
+*No,we can't change the memory size of array after intialization.
+70.What is collection ?
+=======================
+*It will support dissimilar data types.
+*It is dynamic memory allocation.
+*No memory wastage like array.
+71.What is the difference between ArrayList and Vector?
+=======================================================
+ArrayList:
+----------
+*Asynchronize
+*It is not a thread safe
+Vector:
+-------
+*Synchronize
+*Thread safe
+72.What is the difference between ArrayList and LinkedList?
+===========================================================
+LinkedList:
+-----------
+*Insertion and deletion is a best one.
+*Searching/retrieving is a worst.
+*It’s makes performance issue.
+ArrayList:
+----------
+*In Arraylist retrieve/searching is a best one
+*In ArrayList deletion and insertion is a worst one because if we delete/insert one index value after all the index move to forward/backward.
+*It makes performance issue.
+73.How to convert Array to List and List to Array?
+===================================================
+74.Describe the Collections type hierarchy ? What are the main interfaces ?
+===========================================================================
+Main Interface:
+---------------
+*List
+*Set
+*Map
+Hierarchy:
+-----------
+List:
+----
+*ArrayList
+*LinkedList
+*Vector
+Set:
+----
+*Hashset
+*LinkedHashSet
+*Treeset
+Map:
+----
+*HashMap
+*LinkedHashMap
+*Hashtable
+*TreeMap
+*ConcurrentHahMap
+75.What is difference between set and List?
+===========================================
+Set:
+----
+*It is a value based one.
+*It print in random order. *It won't allow duplicate.
+List:
+-----
+*It is a Index based one.
+*It print in insertio order.
+*It allow duplicate.
+76.What is the difference between HashSet and TreeSet ? 
+=======================================================
+HashSet:
+---------
+*It prints in random order.
+TreeSet:
+--------
+*It prints in insertion order.
+77.How to convert List into Set?
+================================
+*By addAll() we can convert List into set.
+78.What is map?
+===============
+*It is key and value pair.
+*Here key+value is a one entry.
+*Key ignore the duplicate value and value allow the duplicate.
+79.What is difference between Hash Map and Hash Table?
+=======================================================
+HashMap:
+--------
+*Key allows single null.
+*Asynchronies(not thread safe).
+Hashtable:
+----------
+*Key and value won't allow null.
+*Synchronize(thread safe).
+80.What is difference between set and Map?
+==========================================
+Set:
+---- 
+*It is a value based one.
+*It print in random order.
+*It won't allow duplicate.
+Map:
+----
+*It is key and value pair.
+*Here key+value is a one entry.
+*Key ignore the duplicate value and value allow the duplicate. 
+81.Can we iterator the list using normal for loop?
+==================================================
+*Yes,we can iterator the list using both normal and by using enhanced for loop.
+82.What are the methods available in list But not in set?
+=========================================================
+*indexOf();
+*get();
+*lastIndexOf();
+83.Explain about user defined Map?
+===================================
+*It is key and value pair.
+*Here key+value is a one entry.
+*Key ignore the duplicate value and value allow the duplicate. 
+84.How much null allows in below maps:
+HashMap :k?,v?
+LinkedHashMap:k?,v?
+TreeMap :k?,v?
+HashTable :k?,v?
+=======================================
+*HashMap :k-1 null,v- n null
+*LinkedHashMap:k-1 null,v- n null
+*TreeMap :k-ignore null,v- ignore null
+*HashTable :k-ignore null,v- ignore null
+85.How to Iterate Map?
+======================
+*We can iterate the map by using entrySet() method.
+86.What is the return type of entrySet?
+=======================================
+*Set>
+87.Write the methods to get the key only and value only?
+========================================================
+*For key only keySet() method is used.
+*For value only values() method is used.
+88.What is mean by File? In which package it is available?
+==========================================================
+*File is a class and itis used to perform the file operation.
+*It is available in java.io package.
+89.What are the methods available in File ?
+===========================================
+*mkdir();
+*mkdirs();
+*list();
+*createNewFile();
+*isDirectory();
+*isFile();
+*isHidden();
+90.While creating a file if we not mention the format then under which format it will save the file?
+=====================================================================================================
+*If we not mention the file format it will automatically take format as file.
+91.What are the difference between append and updating the file?
+================================================================
+For updating the file:
+---------------------
+It will replace the old content of file.
+For appending the file:
+-----------------------
+It will add the content at the end of file.
+92.What is mean by Enumerator,Iteratorand List Iterator? 
+==========================================================
+Enumeration:
+--------------
+*It is a legecy interface and it is used before jdk version 1.4(old version).
+Iterator:
+---------
+*It is an Interface used to iterate the class ArrayList,linkedlist.
+List Iterator:
+--------------
+*It is an interface used for iterating list only.
+*It has Backword direction special features.(go back to the previous element).
+93.Difference between Enumurator,Iterator and List Iterator?
+=============================================================
+Enumerator:
+------------
+*contain legacy class and method
+*work on jdk before 1.4
+*no remove method is available.
+*no Backward direction is possible
+Iterator:
+----------
+*contain normal class and method
+*work on jdk after 1.4
+*remove method is available.
+*no Backward direction is possible.
+ListIterator:
+--------------
+*contain normal class and method
+*work on jdk after 1.4
+*remove method is available.
+*Backward direction is possible.
+94.What are the methods available in Enumerator,Iteratorand List Iterator? 
+==========================================================================
+Enumerator Methods:
+------------------
+*hasMoreElements();
+*nextElement();
+Iterator Methods:
+----------------
+*hasNext(); 
+*next();
+*remove();
+ListIterator Methods:
+---------------------
+*hasNext(); 
+*next();
+*remove();
+*hasPrevious();
+*previous();
+95.Explain JDBC connection steps?
+=================================
+*Import JDBC packages.
+*Load and register the JDBC driver.
+*Open a connection to the database.
+*Create a statement object to perform a query.
+*Execute the statement object and return a query resultset.
+*Process the resultset.
+*Close the resultset and statement objects.
+*Close the connection.
+96.What are control statement?
+===============================
+*Statement which has ontrol over the loop or program is called control statements.
+*Example:if,if else.
+97.What are the difference between break and continue
+===================================
+Break:
+------
+*It will terminate where the condition become true.
+*It will not used inside the loop other than switch case.
+Continue:
+----------
+*It will skip the condition become true and keep executing the loop.
+*It will not used inside the loop
+while and do while
+===================
+While:
+------
+*It is entry check loop.
+Do While:
+---------
+*It is a exit check loop.
+if and if else
+===============
+if
+--
+*execute only when the condition become true.
+if else
+--------
+*execute the else part when then condition become false and execute if part when condition become true.
+immutable and mutable string
+==============================
+Immutable string:
+-----------------
+*We can store more duplicate value in same memory
+*We can't change the value in memory
+*In concord nation, we have to create new memory
+mutable string:
+----------------
+*We can't store duplicate value in same memory
+*We can change the value in memory
+*In concordnation, its takes same memory
+Remove all() and Retain all
+============================
+removeAll():
+------------
+*removeAll() is a method , it is used to compare the both list and remove all the list1 values in list 2
+retainAll():
+------------
+*retainAll() is a method, it is used to compare both list and print the common values
+Literal String and Non literal string
+======================================
+Literal String:
+---------------
+*Its stored inside the heap memory(string pool or string constant).
+*It share the memory if same value (duplicate value)
+Non literal string:
+--------------------
+*It’s stored in the heap memory.
+*Its create a new memory every time even if its duplicate value(same value)
+Heap and stack memory
+=======================
+Heap memory:
+------------
+*Heap for dynamic memory allocation. 
+*Memory access is slow.
+Static memory:
+--------------
+*Stack is used for static memory allocation.
+*Variables allocated on the stack are stored directly to the memory and access to this memory is very fast.
+98.What is the default Package in java?
+=========================================
+*java.lang 
+99.What are the difference between equals() & hashcode()?
+==========================================================
+Equals:
+-------
+*Used to compare the two string.
+Hashcode:
+----------
+*Used to return the address where it stored.
+100.How can we make Array list As a synchronized?
+================================================== 
+*collections.SynchronisedList(refName of array);
+ 

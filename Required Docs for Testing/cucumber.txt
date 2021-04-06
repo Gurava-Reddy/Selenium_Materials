@@ -1,0 +1,53 @@
+package com.stepDef;
+
+import java.util.List;
+
+import org.Base.BaseClass;
+import org.kkk.Pojo;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StepDefinition extends BaseClass
+{
+  Pojo pp;
+
+@Given("User is on the facebook page")
+public void user_is_on_the_facebook_page() {
+ driver=getDriver();   
+    
+}
+
+@When("user enters the valid credentials")
+public void user_enters_the_valid_credentials(io.cucumber.datatable.DataTable dataTable) {
+	List<String> li=dataTable.asList();
+  pp=new Pojo();
+  
+  Launch("https://www.facebook.com/");    
+  type(pp.getTxtfirstname().get(0),li.get(0));
+  type(pp.getTxtlastname().get(0),li.get(1));
+  type(pp.getTxtmobileno().get(0), li.get(2));
+  type(pp.getTxtpasswrd().get(0), li.get(3));
+  dd(pp.getTxtdate().get(0), "10");
+  dd(pp.getTxtmonth().get(0), "12");
+  dd(pp.getTxtyear().get(0), "1991");
+  click(pp.getTxtgender().get(0));
+  click(pp.getTxtclick().get(0));
+  
+}
+
+@When("click the signup button")
+public void click_the_signup_button() {
+    
+    
+}
+
+@Then("successfully  displaying  webpage")
+public void successfully_displaying_webpage() {
+    
+    
+}
+	
+
+}

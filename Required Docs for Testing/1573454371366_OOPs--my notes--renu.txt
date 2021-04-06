@@ -1,0 +1,438 @@
+OOPS Concepts definitions:
+=====================
+.
+1.CLASS:
+----------
+Class is the collection of objects and methods.
+Some of the classes i m using in project are Chromedriver,firefoxdriver,Actions class,robot class,Select etc.
+
+OBJECT:
+-----------
+Object is an instance of a class.Using object only i will be able to access the methods in a class.It is a runtime memory allocation.
+
+Object creation syntax:
+-----------------------------
+Classname objectname=new Classname();
+
+METHODS:
+---------------
+Set of actions to be performed.
+
+2.ENCAPSULATION:
+---------------------------
+Wrapping up of data together in a single unit.We acheive data security by data hiding.
+
+I m using encapsulation in real time in POJO class where i create all my locator variables as private.Because private variables cannot be accessed outside the class.If we want to access private variables we have to use getters.
+
+
+3.ABSTRACTION:
+------------------------
+Hiding the implementation of the program.
+
+3a)ABSTRACT CLASS:
+----------------------------
+In Abstract class,i am acheiving partial abstraction because i can have abstract as well as non-abstract methods.
+
+Abstract method will not have any business logic and contains  'Abstract' keyword.
+Non abstract method can have logic.
+we can't create object for abstract class.
+
+public abstract class Sample {
+	
+	public abstract void clientId();  //abstract method which has no logic
+	
+	public void clientName() {
+	     System.out.println("Client name is CTS");      //non-abstract method with business logic
+}
+
+In real time,i m using 'By' in my project which is an abstract class.
+
+3b)INTERFACE:
+---------------------
+Using interface i m acheiving full abstraction because in interface i can have only the abstract methods.
+Interface use 'implements' keyword.
+we can't create object for Interface.
+
+public interface Test{
+void add();  //All the methods inside interface will have 'public abstract' by default,so no need to mention.
+
+}
+
+I m using many interfaces in my project such as Webdriver,webelement,Alert,Wait,Javascript executor,Takesscreenshot,List,Set,Map etc
+
+4.INHERITANCE:
+-----------------------
+Using inheritance we can access one class properties in another class without multiple object creation.so we can save memory.Also we can acheive code reusability.
+
+ In real time, I m using inheritance concept in base class where i will maintain all reusable methods.so,by extending base class i can call reusable methods wherever i want.
+
+4a)SINGLE INHERITANCE:
+------------------------------------
+One parent class extending in to one child class.
+
+4b)MULTILEVEL INHERITANCE:
+--------------------------------------------
+More than one parent class extended into one child class in tree level structure.
+
+4c)MULTIPLE INHERITANCE:
+---------------------------------------
+More than one parent class parallely supporting into one child class.We can't acheive multiple inheritance in java due to
+1.Syntax error/compilation error(After extends keyword we cannot specify more than one class)
+2.Priority problem(When parent classes having same method name with same arguments)
+ extending into same child class,)
+
+package org.cts.test;
+
+public class Company implements Int1,Int2{
+	
+	@Override
+	public void intId() {
+		System.out.println(123);
+	}
+
+	public void intName() {
+		
+		System.out.println("Multiple Inheritance acheived through interface");
+	}
+	
+	public static void main(String[] args) {
+		Company c=new Company();
+		c.intName();
+		c.intId();
+		
+	}
+	
+}
+
+4d)HYBRID INHERITANCE:
+------------------------------------
+It is the combination of single and multiple inheritance.
+
+4e)HIERARCHIAL INHERITACE:
+-------------------------------------------
+More than one child class inheriting the same parent class.
+
+
+5.POLYMORPHISM:
+--------------------------
+One action/task performed in different ways.
+
+5a)METHOD OVERLOADING:
+---------------------------------------
+Same method overloaded again and again using different arguments type,count and order.
+
+For example:In realtime i m overloading println,sendkeys and frame methods
+
+System.out.println("Renu");
+System.out.println(123);
+System.out.println(12.2);
+
+webelement.senkeys("Renu");          //Here Sendkeys accepts  only one argument
+
+Actions a=new actions(driver);
+a.sendkeys(webelement,"Renu");     //using actions class also we can use sendkeys,here i am passing two arguments 
+
+driver.switchTo.frame(String id);
+driver.switchTo.frame(String name);
+driver.switchTo.frame(int index);
+driver.switchTo.frame(Webelement ); //For same methods i m passing String type,int type and Webelement type
+
+Program:
+----------
+package org.test;
+
+public class Student {
+	public void stuDetails() {
+		System.out.println("Student details");
+
+	}
+
+	public void stuDetails(int stuId) {
+		System.out.println("Student id: "+stuId);
+
+	}
+
+	public void stuDetails(String stuName, int stuId) {
+		System.out.println("Student name: "+stuName);
+		System.out.println("Student id: "+stuId);
+		
+	}
+
+	public void stuDetails(int StuId, String stuName) {
+		System.out.println("Student id: " + StuId);
+		System.out.println("Student name: "+stuName);
+
+	}
+	public static void main(String[] args) {
+		Student s=new Student();
+		s.stuDetails();
+		s.stuDetails(101);
+		s.stuDetails(102, "Renu");
+		s.stuDetails("Renuka", 103);
+				
+	}
+}
+
+Output:
+---------
+Student details
+Student id: 101
+Student id: 102
+Student name: Renu
+Student name: Renuka
+Student id: 103
+
+5b)METHOD OVERRIDING:
+------------------------------------
+When i am not satisfied with the business logic of my super class i am overriding that method in my subclass.
+
+In realtime i m overriding many methods such as retry() method from IRetryAnalyser,transform() method from IAnnotationTransformer and getMessage() method from Exception.
+
+Child class:
+--------------
+public class Child extends Parent{
+	public void print() {
+		System.out.println("Child class method");
+	}
+	
+	public static void main(String[] args) {
+		Child c=new Child();
+		c.print();
+	}
+
+}
+
+Parent class:
+---------------
+public class Parent {
+	public void print() {
+	System.out.println("Parent class method");    //overrided method
+}
+	
+}
+
+ACCESS SPECIFIERS:
+-----------------------------
+
+A)Public(Project level access/Global level access)
+------------------------------------------------------------
+
+In same package as weel as different package,we can access using extends keyword and creating separate object.
+
+B)Protected(Global level access)
+----------------------------------------
+In same package,
+Using extends keyword we can access,by creating separate object also we can access.
+
+If it is in different package,
+using extends keyword only we can access,We cannot create object and access.
+
+C)Default(Package level accesss)
+----------------------------------------
+In same package only we can access(In different package we cannot access)
+using extends keyword and by creating object.
+
+D)Private(Class level access)
+-----------------------------------
+Outside class,we cannot access private variables.If we want to access private variables outside the class we use getters.
+
+
+TYPES OF VARIABLES:
+--------------------------------
+
+LOCAL VARIABLE:
+-------------------------
+Local variable scope is only inside the method/block.
+We cant use access specifiers for local variable.
+We need to initialise local variable.
+
+INSTANCE/GLOBAL VARIABLE:
+------------------------------------------
+Global variable declared inside class and outside methods.
+We can use access specifiers for global variables.
+Need not initialise value for global variable.It will have default value.
+
+STATIC VARIABLE:
+--------------------------
+Static variable retains value between the objects.
+If u specify a method as static, we need not create object for calling the methods.
+
+2 ways of accessing static variables:
+------------------------------------------
+classname.variablename
+variablename
+
+2 ways of accessing static methods:
+------------------------------------------
+classname.methodname();
+methodname();
+
+
+Difference between global variable and static variable:
+-----------------------------------------------------------------
+
+public class Variable {
+
+static int a=20;
+int b=10;
+
+public void print() {
+	System.out.println(a);
+	System.out.println(b);
+	a++;
+	b++;
+
+}
+public static void main(String[] args) {
+	Variable a=new Variable();
+	a.print();
+	Variable b=new Variable();
+	b.print();
+	Variable c=new Variable();
+	c.print();
+}
+
+}
+
+OUTPUT:
+------------
+20
+10
+21       //static variable retains value between objects
+10       
+
+
+FINAL VARIABLE:
+------------------------
+
+1.If a variable declared as "final"---->we can't change the value assigned.
+2.If a method as declared as "final"----->We can't override that method.
+3.If a class as declared as "final"-------->We can't inherit that class.
+
+STRING:
+----------
+String is a collection of characters enclosed within " " .
+
+LITERAL STRING:
+-----------------------
+Literal string shares the same memory incase of duplicates.
+It is stored in String pool constants(String pool constants present inside heap memory)
+
+NON-LITERAL STRING:
+------------------------------
+Non-literal string will not share the same memory even if it is a duplicate.
+Since we use "new" operator everytime it creates new memory.
+Non-literal strings stored in heap memory.
+
+Program:
+----------
+package org.test;
+
+public class Variable {
+
+	public static void main(String[] args) {
+
+		String s = "RENU";
+		String s1 = "RENU";
+
+		System.out.println("Literal String 's': " + s);
+		System.out.println("Literal String 's' address: " + System.identityHashCode(s));
+		
+		System.out.println("Literal String 's1': " + s1);
+		System.out.println("Literal String 's1' address: " + System.identityHashCode(s1));
+
+		System.out.println();
+		
+		String s2 = new String("RENU");
+		String s3 = new String("RENU");
+
+		System.out.println("Non-literal String 's': " + s2);
+		System.out.println("Non-literal String 's' address: " + System.identityHashCode(s2));
+		
+		System.out.println("Non-literal String 's1': " + s3);
+		System.out.println("Non-literal String 's1' address: " + System.identityHashCode(s3));
+
+		}
+}
+
+
+Output:
+---------
+Literal String 's': RENU
+Literal String 's' address: 2018699554
+Literal String 's1': RENU
+Literal String 's1' address: 2018699554
+
+Non-literal String 's': RENU
+Non-literal String 's' address: 1311053135
+Non-literal String 's1': RENU
+Non-literal String 's1' address: 118352462
+
+
+IMMUTABLE STRING:
+-----------------------------
+Immutable string once string created,value can't be changed in reference.
+Eg:String literals
+
+MUTABLE STRING:
+--------------------------
+For mutable string,we can change the value in reference.
+Eg:StringBuffer,StringBuilder
+
+StringBuffer---->Synchronised(One thread can only access StringBuffer class at a time),Thread safe
+StringBuilder---->Asynchronised(Multiple threads can access StringBuilder class at a time),Not thread safe.
+
+Program:
+----------
+package org.test;
+
+public class Variable {
+
+	public static void main(String[] args) {
+
+		String s = "Hello";
+		String s1 = "world";
+		System.out.println("IMMUTABLE STRING");
+		System.out.println("Immutable String 's' address: " + System.identityHashCode(s));
+		System.out.println("Before concatenation 's': "+s);
+		System.out.println("Immutable String 's1' address: " + System.identityHashCode(s1));
+		System.out.println("Before concatenation 's1': "+s1);
+		String co = s.concat(s1);
+		System.out.println("Immutable String 'co' address: " + System.identityHashCode(co));
+		System.out.println("After concatenation 's': "+s);
+		System.out.println("After concatenation third reference variable 'co': "+co);
+		
+		StringBuffer s2 = new StringBuffer("nisha");
+		StringBuffer s3 = new StringBuffer("nisha");
+		System.out.println("MUTABLE STRING");
+		System.out.println("Mutable String 's2' address: " + System.identityHashCode(s2));
+		System.out.println("Before appending s2: "+s2);
+		System.out.println("Mutable String 's3' address: " + System.identityHashCode(s3));
+		s2.append(s3);
+		System.out.println("After appending s2: "+s2);
+		System.out.println("Mutable String 's2' address: " + System.identityHashCode(s2));
+	}
+}
+
+OUTPUT:
+------------
+IMMUTABLE STRING
+Immutable String 's' address: 2018699554
+Before concatenation 's': Hello
+Immutable String 's1' address: 1311053135
+Before concatenation 's1': world
+Immutable String 'co' address: 118352462
+After concatenation 's': Hello
+After concatenation third reference variable 'co': Helloworld
+
+MUTABLE STRING
+Mutable String 's2' address: 1550089733
+Before appending s2: nisha
+Mutable String 's3' address: 865113938
+After appending s2: nishanisha
+Mutable String 's2' address: 1550089733
+
+Note:
+------
+System-class
+identityHashCode() -method to find the address of the variable.

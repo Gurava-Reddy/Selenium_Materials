@@ -1,0 +1,34 @@
+In my project we follow Agile scrum process.
+
+In my team we have 5 developers and 2 tester, we follow 2 weeks Sprint.
+
+Once the PO shares the product backlog link from JIRA to all my team, we all will try to understand user stories which are there in the Product Backlog and prepare query log in case of any doubt.
+
+we get our queries clarified with our PO in grooming session, which lasts to 2-3 hrs bases upon the User stories count.
+
+Then we go for sprint planning session. During  sprint planning session, we size the user stories. 
+
+For sizing the user stories we use Poker Techinque which uses fibonacci series numbers (1,2,3,5,8 & 13).
+
+Based upon the Complexity Scrum Development team gives the score to an User story where 1 is the very simple US and 13 is a complex story.
+
+Once the sizing is done, my PO will move the User stories from Product backlog to Sprint backlog based on the priority of the User story.
+
+For our 2 weeks sprint we will take around 40 USP (User story points).
+
+Soon after sizing is done I create tasks like prepare test scenarios, to prepare test scripts for the user stories assigned to me.
+
+Once the test scenarios and test cases are completed I will share the same with my PO for approval. 
+
+When the Sprint starts then we wll have the scrum meeting on daily basis where we have to update the progress like whats the plan for today and what did I do yesterday or if there  are any challenges during scripting or execution.
+
+If I have any challenges or impediments then my Scrum Master will address that to resolve it.
+
+On the last day of our sprint, we have the sprint review session, where our PO prepares a demo session to showcase what we have done for the last 2 weeks, to my customer.
+
+Then we go for sprint retrospective, here we discuss what went well and what went not well.
+Our Success, Shortcomings, Improvements & Recognisations are given by each Scrum team member.
+
+
+
+

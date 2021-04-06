@@ -1,0 +1,69 @@
+Java Interview Questions:
+-----------------------------------
+
+1.JDK
+2.JVM
+3.JRE
+3.Which version of JDK you are using
+4.What is the Default package of java
+5.Define OOPS
+6.What is mean by class, object and method.
+7.Super class for all java class
+8.Scanner class or use of Scanner Class
+9.What are the OOPS concepts
+10.Inheritance and its types
+11.Single Inheritance
+12.Multilevel Inheritance
+13.Multiple Inheritance
+14.Is multiple Inheritance will support in java using extends keyword and explain how
+15.Polymorphism and  its types
+16.Diffrence between Method overloading and Method Overriding
+17.Abstraction and its Types
+18.Diffrence between abstract class  and interface
+19.Access Specifiers
+20.Diffrence between public and protected
+21.Difference between default and public
+22.Explain static
+23.How will you call or access static class methods
+24.String and its methods
+25.String Types.
+26.Why String is Immutable
+27.Explain String Buffer and String Builder
+28.What is the method to find the length of the String
+29.What is the difference between normal for loop and Enhanced for loop
+30.Constructor and its Types
+31.Purpose of Constructor
+32.this();
+33.super()
+34.Types of Variables
+34.What is meant by Array
+35.Declaration of Array
+36.What is the method to find the length of the array
+37.Can we change the array size once it is declared
+38.Advantages and DisAdvantages of Array
+39.How will you overcome the disadvantage of Array
+40.What is mean by collection
+41.What is mean by List
+42.What is mean by Generics
+43.What is mean by wrapper class
+44.Types or Classes of List and its order
+45.What is meant by Set
+46.Types of Set and its order
+47.How will you iterate the Set
+48.Difference between List and Set
+49.What is meant by Map
+50.Types of Map and its output order
+51.How will you iterate the Map
+52.Diffrence between HashMap,LinkedHashMap, TreeMap and HashTable
+53.Exception and its Types
+54.Super class of all the Exception
+55.How will you handle the Exception in java
+56.How will you print the unknown exception name
+57.How will you print the message of the particular exception
+58.What is meant by try
+59.What is meant by catch
+60.What is meant by Finally
+61.try is possible without catch
+62.Is try within the try is possible or nested try
+63.What is mean by throw and throws
+64.Diffrence between throw and throws

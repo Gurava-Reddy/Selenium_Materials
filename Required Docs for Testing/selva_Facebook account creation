@@ -1,0 +1,191 @@
+base:
+........
+package com.test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Base {
+
+	public static WebDriver driver;
+
+	public static WebDriver getDriver() {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\eclipse-workspace\\Selva1\\FaceBook\\Driver\\chromedriver.exe");
+
+		driver=new ChromeDriver();
+
+		return driver;
+	}
+
+	public static String getUrl() {
+		return driver.getCurrentUrl();	
+	}
+	public static void maxi() {
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+
+	}
+
+	public static String getAttributevalue(WebElement element) {
+		return element.getAttribute("value");
+	}
+
+	public static void loadurl(String url) {
+
+		driver.get(url);
+	}
+
+	public static void type(WebElement element, String name) {
+		element.sendKeys(name);
+	}
+	public static void btnClick(WebElement element) {
+		element.click();
+	}
+
+	public static void selectDrop(WebElement w,String s)
+	{
+		Select se=new Select(w);
+		se.selectByValue(s);
+	}
+
+
+}
+
+
+
+loginpage:
+.................
+package com.test;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage extends Base  {
+	
+	public LoginPage() {
+		
+		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(name="firstname")
+	private WebElement firstName;
+
+	@FindBy(name ="lastname")
+	private WebElement lastName;
+
+	@FindBy(name="reg_email__")
+	private WebElement emailAddress;
+	
+	@FindBy(name="reg_passwd__")
+	private WebElement newPassword;
+	
+	@FindBy(name="reg_email_confirmation__")
+	private WebElement confirmPassword;
+	
+	
+	
+	public WebElement getFirstName() {
+		return firstName;
+	}
+
+	public WebElement getConfirmPassword() {
+		return confirmPassword;
+	}
+
+	public WebElement getLastName() {
+		return lastName;
+	}
+
+	public WebElement getEmailAddress() {
+		return emailAddress;
+	}
+
+	public WebElement getNewPassword() {
+		return newPassword;
+	}
+
+	public WebElement getDay() {
+		return day;
+	}
+
+	public WebElement getMonth() {
+		return month;
+	}
+
+	public WebElement getYear() {
+		return year;
+	}
+
+	public WebElement getGenderMale() {
+		return genderMale;
+	}
+
+	public WebElement getSignUp() {
+		return signUp;
+	}
+
+	@FindBy(id="day")
+	private WebElement day;
+	
+	@FindBy(id="month")
+	private WebElement month;
+	
+	@FindBy(id="year")
+	private WebElement year;
+	
+	@FindBy(xpath="(//input[@class='_8esa'])[2]")
+	private WebElement genderMale;
+	
+	@FindBy(name="websubmit")	
+	private WebElement signUp;
+	
+	
+	
+	
+}
+
+
+
+Fianl:
+.........
+package com.test;
+
+public class Fianal extends Base {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		getDriver();
+		loadurl("https://www.facebook.com/");
+		maxi();
+		LoginPage l=new LoginPage();
+		Thread.sleep(4000);
+		type(l.getFirstName(),"selva");
+		type(l.getLastName(),"arun");
+		type(l.getEmailAddress(),"saravanan@gmail.com");
+		type(l.getConfirmPassword(),"saravanan@gmail.com");
+		type(l.getNewPassword(),"greens");
+		selectDrop(l.getDay(), "2");
+		selectDrop(l.getMonth(), "2");
+		selectDrop(l.getYear(), "1993");
+		btnClick(l.getGenderMale());
+		btnClick(l.getSignUp());
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

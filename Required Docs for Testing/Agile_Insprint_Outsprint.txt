@@ -1,0 +1,12 @@
+Insprint:
+
+To develop and automate user stories in the same sprint, is called in-sprint automation.
+Say there are 4 User stories in a sprint which could be automated then, I will write a dummy step definition for the User stories which I am going to automate it in this sprint.
+In a 2 weeks sprint we will have 6 days for the developer to Develop the application and on 7th day the build is delivered to the Automation team. After that we will execute the scripts.
+
+
+Outsprint or n-1 Sprint:
+
+To automate user stories for the previous sprint, is called out-sprint automation.
+Say there were 4 User stories from previous Sprint (Sprint1) which could be automated. I will automate it in Sprint 2, which is called as n-1 or outsprint automation.
+In my previous Sprint i.e Sprint 1, I will be working on the framework setup.

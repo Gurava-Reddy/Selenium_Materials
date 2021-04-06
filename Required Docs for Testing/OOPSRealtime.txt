@@ -1,0 +1,151 @@
+OOPS:
+-----
+OOPS is Object Oriented Programming Structure ,It have
+
+class,method,object
+Encapsulation
+Inheritance
+polymorphism
+Abstractions
+
+In our project we have implemented OOPS concepts lots of places
+
+Class:
+=======
+1.Class is a collections of methods and objects
+2.In our project We are using lots of predefined classes  like
+ 1.ChromeDriver
+ 2.FireFoxDriver
+ 3.InternetExplorerDriver
+ 4.Actions
+ 5.Robot
+ 6.Select
+ 7.RemoteWebDriver
+
+Methods:
+========
+1.Method is a set of action to be performed 
+2.We used to write the business logics in methods
+3.In our project We are using lots of predefined Methods like
+ get()
+ getTitle()
+ getCurrentUrl()
+ getText()
+ getAttribute
+
+
+Encapsulations:
+===============
+1.In our project we used to Maintain the all locators  in the POJO class as object repository and using Object indirectely access the locators in the differnt class using page object Model(POM) with pageFactory concept
+
+2.Also we can say the Structure of creating folders are called Encapsulations
+
+Inheritance:
+=============
+1.We can access one class property(methods) into another class using extends keywords.
+2.In our project ,We used maintain the all resuable methods(sendKeys,click) and using extends keyword we can access all the methods where its required
+
+
+Method Overloading:
+====================
+1.The Same method is going to act as differt behaviour that is called method overloading
+2.In our project we are using method overloading concepts like println(),sendKeys(),frame(),Waits(SECONDS,MINUTES,HOURS)
+
+Method Overriding:
+==================
+1.Method overriding is used to provide the specific implementation of a method which is 
+already provided by its superclass.
+
+2.In our project we implemented method overriding concepts like Userdefine 
+ 1.Exception(getMessage()---Exception class)
+ 2.TakesScreenShot--getScreenShotAs()
+ 3.RetryAnalyzer---retry()
+ 4.IAnnotationTransformer---transform
+ 5.List---(get(),indexOf())
+ 6.Set----(add(),remove())
+ 7.Map----(put,containsKey())
+
+Abstract class:
+===============
+1.It supports abstract method and non abstract method is called abstract class
+2.Using extends keyword we write our business logics
+3.In our project we are using By as abstract class
+
+Interface:
+==========
+1.Its supports only abstract methods 
+2.Using implements keyword we can write the implementations
+
+3.In our project we are using lots of interfaces
+ 1.SearchContext
+ 2.WebDriver
+ 3.JavaScriptExecutor
+ 4.TakesScreenShot
+ 5.RetryAnalyzer
+ 6.IAnnotationTransformer
+ 7.Alters
+ 8.WebElement
+ 9.Waits
+ 10.List
+ 11.Set
+ 12.Map
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

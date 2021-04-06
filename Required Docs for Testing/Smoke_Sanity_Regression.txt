@@ -1,0 +1,23 @@
+Smoke Testing:
+Smoke Testing is done to make sure if the build we received from the development team is testable or not. It is also called as “Day 0”.
+We will execute only the basic flows or functionalities. Smoke testing will be done for 3-4 hours on the day when we receive the build.(Version1.0)
+
+Sanity: 
+
+Sanity Testing is done during the release phase and in case I receive an updated build with newly added features.
+
+We will check the main functionalities of the application without going deeper and also will check the newly added feature.
+
+This will be done for 3-4 hours on the day when we receive the newly updated build.(Version2.0)
+
+Regression:
+
+Repeated testing of an already tested program, after modification, to discover any defects introduced due to newly added feature is called Regression testing.
+
+Regression testing is done on the below scenarios:
+
+a. New functionalities are added to the application
+b. Change Requirement (In organizations, we call it as CR)
+c. Defect Fixing
+d. Performance Issue Fix
+e. Environment changes

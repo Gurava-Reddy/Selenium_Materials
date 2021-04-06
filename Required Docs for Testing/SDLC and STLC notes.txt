@@ -1,0 +1,54 @@
+SDLC and STLC:
+
+Phases of SDLC:
+
+Requirement and analysis:
+
+Design
+
+coding 
+
+Testing----------STLC
+
+Production 
+
+Maintanenece
+
+Software development life cycle
+-----------------------------------------
+
+In Requirement phase, Bussiness analyst will gather the requirement from the client about the product and specifications and then Bussiness Analyst(BA) 
+will analyze the requirements and  prepare a BRD (Bussiness requirement Specifications)document as per the customer requirements and he will send that prepared document to the client and 
+he will get the approval from the client .
+
+Then BRD document will move into next phase and then based on the BRD document only ,the product or software will designed as per the client requirements ,Once design of the software is done
+
+Then SRS document is ready (Software requirement specifications) and the SRSDocument will be moved into the next stage called Coding and development,Based on the SRS document ,developers will develop the code according to the design document
+
+and once developer coded for the functionality of the software then they will move their code or build into testing enviornment called Testing and once developer moved the code into testing stage ,tester will test the applications as per the flow STLC)
+
+Softwatre testing life cycle :
+----------------------------------------------------
+
+Software testing life cycle has some stages like Requirements and analysis,Test planning,Test design,Test execution,Signoff of the product 
+
+In requirement phase,Entry criteria of this phase Testers will gather and understand the scope requirements of the product from the BA.
+ if the testers have any clarifications about the product and specifications I will prepare the clarification or query log for the requirement and share the same with my Manager, later BA will conduct a walk through about the  requirement and then at the end of the session my clarifications will be cleared.
+
+in this stage ,test startegy and test estimation and resource estimation  by my manager. My manager will plan for the numbers of automation testers as well as manual testers required for the requirement. 
+
+By my role after understanding the requirement is to prepare requirement tracebility matrix/test grid. Once the RTM is prepared, I will start writing the test scenarios and then test cases.
+
+Once all the test cases for the requirement is completed, I will share the same with my team members for peer review.
+
+Basesd on the review comments from my peer. I will update my test cases.
+
+Once it is completed then will send the same to my Manager and he/she will consolidate and forward it to BA for approval.
+
+Next we will perform the Test Execution once the dev. team provides the build.
+My Manager will allocate some test cases for me each day.
+I will execute the test cases and will take screenshots for each step.
+In case if any test case fails I will raise a defect with my Development team. 
+At the end of the day I will send a status to my manager with the execution results.
+
+Finally at the end of test execution cycle my manager will give a sign off to BA/Client. Sign off document should have details like Requirements tested in the release, Execution status with Pass and Fail status, Functionalities covered and list of open defects in that particular release.
